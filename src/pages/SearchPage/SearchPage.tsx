@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { useSearchParams, useNavigate } from 'react-router-dom';
+import { useSearchParams } from 'react-router-dom';
 import styles from './SearchPage.module.css';
 import Header from '../../widgets/Header/Header';
 import Footer from '../../widgets/Footer/Footer';
@@ -20,7 +20,6 @@ const TABS = [
  */
 const SearchPage: React.FC = () => {
     const [searchParams, setSearchParams] = useSearchParams();
-    const navigate = useNavigate();
     const query = searchParams.get('q') || '';
     const tab = searchParams.get('tab') || 'overview';
 
