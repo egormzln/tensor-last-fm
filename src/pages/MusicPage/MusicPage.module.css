@@ -1,0 +1,24 @@
+.music-page,
+.search-page,
+.artist-page,
+.track-page {
+    flex: 1 0 auto;
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
+}
+
+.music-page {
+    min-height: 100vh;
+    background: #fff;
+}
+
+.music-page__main,
+.search-page__main,
+.artist-page__main,
+.track-page__main {
+    flex: 1 1 auto;
+    min-height: 0;
+    padding: var(--spacing-lg) 0;
+    background: var(--color-bg);
+}

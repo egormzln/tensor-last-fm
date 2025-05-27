@@ -1,0 +1,42 @@
+.album-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 8px 0;
+}
+
+.album-card__cover-wrapper {
+    margin-bottom: 10px;
+}
+
+.album-card__cover {
+    width: 80px;
+    height: 80px;
+    border-radius: 8px;
+    object-fit: cover;
+    background: var(--color-gray);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.album-card__cover--placeholder {
+    width: 80px;
+    height: 80px;
+    border-radius: 8px;
+    background: var(--color-gray);
+}
+
+.album-card__title {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--color-text);
+    margin-bottom: 2px;
+}
+
+.album-card__artist {
+    font-size: 0.95rem;
+    color: #666;
+}
