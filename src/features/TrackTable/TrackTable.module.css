@@ -1,0 +1,34 @@
+.track-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: var(--spacing-lg);
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+}
+
+.track-table__col {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--color-text);
+    padding: 12px 8px;
+    background: #f7f7f7;
+    text-align: left;
+}
+
+.track-table__row {
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.track-table__row:hover {
+    background: var(--color-gray);
+}
+
+.track-table__cell {
+    font-size: 1rem;
+    color: var(--color-text);
+    padding: 10px 8px;
+    border-bottom: 1px solid #eee;
+}

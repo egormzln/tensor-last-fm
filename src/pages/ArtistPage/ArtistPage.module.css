@@ -1,0 +1,105 @@
+.artist-page {
+    min-height: 100vh;
+    background: #fff;
+}
+
+.artist-page__main {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: var(--spacing-lg) 0;
+}
+
+.artist-page__loading {
+    width: 100%;
+    height: 400px;
+    background: var(--color-gray);
+    border-radius: 12px;
+}
+
+.artist-page__error {
+    color: var(--color-primary);
+    margin-bottom: var(--spacing-md);
+    font-weight: bold;
+}
+
+.artist-page__retry {
+    background: var(--color-primary);
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 12px;
+}
+
+.artist-page__header {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--spacing-lg);
+    margin-bottom: var(--spacing-lg);
+}
+
+.artist-page__avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    background: var(--color-gray);
+    border: 2px solid #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.artist-page__info {
+    flex: 1;
+}
+
+.artist-page__name {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: var(--color-text);
+}
+
+.artist-page__bio {
+    font-size: 1.05rem;
+    color: #444;
+}
+
+.artist-page__section {
+    margin-bottom: var(--spacing-lg);
+}
+
+.artist-page__section-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: var(--spacing-md);
+    color: var(--color-text);
+}
+
+.artist-page__tracks-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-md);
+}
+
+.artist-page__track-link {
+    color: var(--color-primary);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1rem;
+    transition: text-decoration 0.2s;
+}
+
+.artist-page__track-link:hover {
+    text-decoration: underline;
+}
+
+.artist-page__albums-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--spacing-lg);
+}

@@ -1,0 +1,112 @@
+.track-page {
+    min-height: 100vh;
+    background: #fff;
+}
+
+.track-page__main {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: var(--spacing-lg) 0;
+}
+
+.track-page__loading {
+    width: 100%;
+    height: 320px;
+    background: var(--color-gray);
+    border-radius: 12px;
+}
+
+.track-page__error {
+    color: var(--color-primary);
+    margin-bottom: var(--spacing-md);
+    font-weight: bold;
+}
+
+.track-page__retry {
+    background: var(--color-primary);
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 12px;
+}
+
+.track-page__content {
+    display: flex;
+    gap: var(--spacing-lg);
+    align-items: flex-start;
+}
+
+.track-page__cover-wrapper {
+    flex-shrink: 0;
+}
+
+.track-page__cover {
+    width: 120px;
+    height: 120px;
+    border-radius: 12px;
+    object-fit: cover;
+    background: var(--color-gray);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.track-page__cover--placeholder {
+    width: 120px;
+    height: 120px;
+    border-radius: 12px;
+    background: var(--color-gray);
+}
+
+.track-page__info {
+    flex: 1;
+}
+
+.track-page__title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: var(--color-text);
+}
+
+.track-page__artist {
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+    color: #444;
+}
+
+.track-page__artist-link {
+    color: var(--color-primary);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.track-page__artist-link:hover {
+    text-decoration: underline;
+}
+
+.track-page__album {
+    font-size: 1rem;
+    margin-bottom: 8px;
+    color: #444;
+}
+
+.track-page__album-title {
+    font-weight: 500;
+    color: var(--color-text);
+}
+
+.track-page__meta {
+    display: flex;
+    gap: var(--spacing-md);
+    font-size: 0.98rem;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.track-page__summary {
+    font-size: 1rem;
+    color: #444;
+    margin-top: 10px;
+}
