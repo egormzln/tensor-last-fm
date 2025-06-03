@@ -1,0 +1,175 @@
+.search-page {
+    min-height: 100vh;
+    background: #fff;
+}
+
+.search-page__main {
+    min-height: 600px;
+    padding: var(--spacing-lg) 0;
+    background: var(--color-bg);
+}
+
+.search-page__search-block {
+    max-width: 900px;
+    margin: 0 auto var(--spacing-lg) auto;
+    padding: var(--spacing-md) var(--spacing-lg);
+    background: #f7f7f7;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+}
+
+.search-page__query {
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-bottom: var(--spacing-md);
+    color: var(--color-text);
+}
+
+.search-page__tabs {
+    display: flex;
+    gap: var(--spacing-md);
+}
+
+.search-page__tab {
+    background: none;
+    border: none;
+    color: var(--color-text);
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 8px 20px;
+    border-radius: 6px 6px 0 0;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+}
+
+.search-page__tab--active {
+    background: var(--color-primary);
+    color: #fff;
+}
+
+.search-page__results {
+    max-width: 900px;
+    margin: 0 auto;
+    min-height: 300px;
+}
+
+.search-page__artists-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--spacing-lg);
+    margin-top: var(--spacing-lg);
+}
+
+.search-page__artist-loading {
+    width: 100%;
+    height: 130px;
+    background: var(--color-gray);
+    border-radius: 12px;
+}
+
+.search-page__error {
+    color: var(--color-primary);
+    margin-bottom: var(--spacing-md);
+    font-weight: bold;
+}
+
+.search-page__retry {
+    background: var(--color-primary);
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 12px;
+}
+
+.search-page__albums-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--spacing-lg);
+    margin-top: var(--spacing-lg);
+}
+
+.search-page__album-loading {
+    width: 100%;
+    height: 150px;
+    background: var(--color-gray);
+    border-radius: 12px;
+}
+
+.search-page__tracks-table {
+    margin-top: var(--spacing-lg);
+}
+
+.search-page__tracks-loading {
+    width: 100%;
+    height: 320px;
+    background: var(--color-gray);
+    border-radius: 12px;
+}
+
+.search-page__overview {
+    margin-top: var(--spacing-lg);
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-lg);
+}
+
+.search-page__overview-loading {
+    width: 100%;
+    height: 220px;
+    background: var(--color-gray);
+    border-radius: 12px;
+}
+
+.search-page__overview-section {
+    background: #fff;
+    border-radius: 12px;
+    padding: var(--spacing-md);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+}
+
+.search-page__overview-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: var(--spacing-md);
+    color: var(--color-text);
+}
+
+.search-page__overview-artists {
+    display: flex;
+    gap: var(--spacing-lg);
+}
+
+.search-page__overview-albums {
+    display: flex;
+    gap: var(--spacing-lg);
+}
+
+.search-page__overview-tracks {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.search-page__overview-track-link {
+    color: var(--color-primary);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1rem;
+    transition: text-decoration 0.2s;
+}
+
+.search-page__overview-track-link:hover {
+    text-decoration: underline;
+}
+
+.search-page__overview-track-artist {
+    color: #666;
+    font-weight: 400;
+    font-size: 0.98rem;
+}
